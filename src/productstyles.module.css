@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.container{
+    padding: 40px;
+    
+    margin: auto;
+    
+
+}
+.Login{
+    
+    padding: 22px;
+    margin: auto;
+    width: 75%;
+    border-radius: 30px;
+    background-color: rgb(233, 227, 233);
+}
+.imgcontainer{
+   
+    text-align: center;
+    position: relative;   
+}
+.avatar{
+    text-align: center;
+    position: relative;   
+    margin-bottom: 20px;
+    width: 40%;
+    border-radius: 10%;
+ 
+
+}
+h1{
+    margin: 20px;
+    color: tomato;
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+    padding: 5px;
+    
+}
+.forms
+{   width: 352px;
+    margin: auto;
+    box-shadow: 0px -2px 8px 9px rgb(0 0 0 / 38%);
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+}
+input[type=email], input[type=password] {
+    width: 90%;
+    padding: 6px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    color: black;
+    background-color: whitesmoke;
+    border-color: rgb(14, 13, 13);
+    border: 1px solid;
+    border-radius: 5px;
+
+    
+    
+  }
+  button {
+    background-color: rgb(113, 206, 243);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .items{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5.00275px rgba(0, 0, 0, 0.25);
+    border-radius: 10.0055px;
+padding: 10px;
+width: 137.58px;
+height: 150.08px;
+  }
+  .items img{
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+  }
+  .name{
+    font-size: 17.5096px;
+    font-style: normal;
+    margin: 5px 0;
+  }
+.productcontainer{
+    display: block;
+    padding: 40px 0;    
+    background-color:white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.row
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    
+    flex: 20%;
+    max-width: 20%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+@media screen and (max-width: 700px) {
+    .col
+    {
+        flex: 100%;
+        max-width: 32%;
+    }
+    
+}

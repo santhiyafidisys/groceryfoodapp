@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './productstyles.module.css'; 
-import Login from './Loginpage';
-	const Productpage = () => {
+
+
+
+	const Productpage = () => {		
 			const productlist = [
 				{ 
 					"id": 1,
@@ -53,7 +55,19 @@ import Login from './Loginpage';
 					"image":"Diary.png",
 					"category": "Frequently Bought",
 				},
+				
 			];
+		// 	const setData = () => {
+		// 		 productlist={ id: '',image: '', category: ''} 
+		// 		localStorage.setItem('myList',JSON.stringify(productlist));
+		// 	 }
+		// // getData = () =>{
+		// // 	let productlist = localStorage.getItem('myList');
+		// // 	data= JSON.parse(data);
+		// // 	console.log(data)
+		// // }
+		// localStorage.setItem('productlist',JSON.stringify(productlist));
+
 
 		
         return (
@@ -65,20 +79,16 @@ import Login from './Loginpage';
 										<div className={styles.items} id={l.id}>
 										<img src={l.image}  alt=" "/>
 											<p className={styles.name}>{l.category}</p>
-
 										</div>		
 								</div>
-
-									)}
-								
-							</div>
-							
-
-						
+								)}								
+							</div>												
 					</div>
 
         );
     }
+		
+	
 
 
 export default Productpage;

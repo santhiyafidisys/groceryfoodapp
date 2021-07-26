@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './Loginpage';
 
-import Productpage from './Productpage';
+import App from './App';
+
+
 class Grocesry extends React.Component{
   render() {
     return (
 
-      <Login />
+      <App />
+    
  
       
   

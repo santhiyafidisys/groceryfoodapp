@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './productstyles.module.css'; 
 
-
-
 	const Productpage = () => {		
 			const productlist = [
 				{ 
@@ -66,13 +64,30 @@ import styles from './productstyles.module.css';
 		// // 	data= JSON.parse(data);
 		// // 	console.log(data)
 		// // }
-		// localStorage.setItem('productlist',JSON.stringify(productlist));
-
-
-		
-        return (
-					
+		// localStorage.setItem('productlist',JSON.stringify(productlist));		
+        return (					
 					<div className={styles.productcontainer}>
+						<div className={styles.navbar}>
+							<div className={styles.logo1}>
+							<img className={styles.logo} src="Group 1.png" alt=" "></img>
+
+<div className={styles.logopart}>
+<p>Deva Daily Needs</p>
+<p>Powered by Needsmart-Fidisys</p>
+</div>
+
+							</div>
+						<div className={styles.nav}>
+						<ul className={styles.nav}>
+                <li><i class="fa fa-fw fa-search"></i>Search</li>
+                <li>Orders</li>
+                <li><i class="fa fa-fw fa-envelope"></i>Accounts</li>
+                <li>Cart</li>
+            </ul>
+
+						</div>
+
+    </div>
 							<div className={styles.row}>
 								{productlist.map(l =>
 									<div className={styles.col}>
@@ -82,13 +97,9 @@ import styles from './productstyles.module.css';
 										</div>		
 								</div>
 								)}								
-							</div>												
+							</div>	 											
 					</div>
 
         );
     }
-		
-	
-
-
 export default Productpage;

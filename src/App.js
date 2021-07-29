@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Login from './Loginpage';
 import Productpage from './Productpage';
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
 
 function App() {

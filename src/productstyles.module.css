@@ -122,3 +122,50 @@ height: 150.08px;
     }
     
 }
+.logo1{
+    border: 1px solid;
+    display: flex;
+}
+.logopart {
+    margin: 0;
+    flex-direction: column;
+    text-align: left;
+}
+.logo
+{   
+    
+    cursor: pointer;
+   
+    padding: 5px 15px;
+}
+.nav{
+    padding: 0 20px;
+    border: solid 1px;
+      float: right;
+
+}
+.navbar{
+    border: 1px black solid;
+    padding: 15px;
+    display: flex;
+   
+}
+
+
+
+.navbar ul{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
+.navbar ul li{
+    align-items: center;
+    padding: 18px;
+    display: flex;
+    text-decoration: none;
+}

@@ -1,5 +1,10 @@
 import React from 'react';
 import styles from './productstyles.module.css'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 	const Productpage = () => {		
 			const productlist = [
@@ -70,25 +75,26 @@ import styles from './productstyles.module.css';
 						<div className={styles.navbar}>
 							<div className={styles.logo1}>
 							<img className={styles.logo} src="Group 1.png" alt=" "></img>
-
 <div className={styles.logopart}>
-<p>Deva Daily Needs</p>
-<p>Powered by Needsmart-Fidisys</p>
+<h2>Deva Daily Needs</h2>
+<p>Powered by Needsmart Fidisys</p>
 </div>
 
 							</div>
 						<div className={styles.nav}>
-						<ul className={styles.nav}>
-                <li><i class="fa fa-fw fa-search"></i>Search</li>
-                <li>Orders</li>
-                <li><i class="fa fa-fw fa-envelope"></i>Accounts</li>
-                <li>Cart</li>
+						<ul className={styles.menu}>
+                <li><img src="Vector (6).png"  alt=" "></img>Search</li>
+                <li><img src="Vector (10).png"  alt=" "></img>Orders</li>
+                <li><img src="Vector (7).png"  alt=" "></img>Accounts</li>
+                <li><img src="Vector (9).png"  alt=" "></img>Cart</li>
             </ul>
-
 						</div>
 
     </div>
+		<img className={styles.offer} src="offers banner.png" alt=" "/>
 							<div className={styles.row}>
+
+            
 								{productlist.map(l =>
 									<div className={styles.col}>
 										<div className={styles.items} id={l.id}>

@@ -1,5 +1,13 @@
 import React from 'react';
 import styles from './productstyles.module.css'; 
+import { useHistory	 } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
@@ -73,22 +81,22 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
         return (					
 					<div className={styles.productcontainer}>
 						<div className={styles.navbar}>
-							<div className={styles.logo1}>
-							<img className={styles.logo} src="Group 1.png" alt=" "></img>
-<div className={styles.logopart}>
-<h2>Deva Daily Needs</h2>
-<p>Powered by Needsmart Fidisys</p>
-</div>
+							<div className={styles.logo}>
+							<img  src="Group 1.png" alt=" "></img>
+							<div className={styles.logotext}>
+							<h2>Deva Daily Needs</h2>
+								<p>Powered by Needsmart Fidisys</p>
 
 							</div>
-						<div className={styles.nav}>
-						<ul className={styles.menu}>
-                <li><img src="Vector (6).png"  alt=" "></img>Search</li>
-                <li><img src="Vector (10).png"  alt=" "></img>Orders</li>
-                <li><img src="Vector (7).png"  alt=" "></img>Accounts</li>
-                <li><img src="Vector (9).png"  alt=" "></img>Cart</li>
-            </ul>
-						</div>
+
+							</div>					
+							<ul className={styles.menu}>
+										<li><img src="Vector (6).png"  alt=" "></img>Search</li>
+										<li><img src="Vector (10).png"  alt=" "></img>Orders</li>
+										<li><img src="Vector (7).png"  alt=" "></img>Accounts</li>
+										<li><img src="Vector (9).png"  alt=" "></img>Cart</li>
+										<li><Link to="/login">Login</Link></li>
+								</ul>
 
     </div>
 		<img className={styles.offer} src="offers banner.png" alt=" "/>
@@ -99,7 +107,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 									<div className={styles.col}>
 										<div className={styles.items} id={l.id}>
 										<img src={l.image}  alt=" "/>
-											<p className={styles.name}>{l.category}</p>
+										
+											<p className={styles.name}><Link to='login'>{l.category}</Link></p>
 										</div>		
 								</div>
 								)}								

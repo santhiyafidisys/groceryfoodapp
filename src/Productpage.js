@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './productstyles.module.css'; 
+
+
 import { useHistory	 } from "react-router-dom";
 import {
   BrowserRouter as Router,
@@ -7,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Productlist from './Productlist';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -77,10 +80,33 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 		// // 	data= JSON.parse(data);
 		// // 	console.log(data)
 		// // }
-		// localStorage.setItem('productlist',JSON.stringify(productlist));		
+		// localStorage.setItem('productlist',JSON.stringify(productlist));	
+		const Section = () =>(
+			<div className={styles.navbar}>
+			<div className={styles.logo}>
+			<img  src="Group 1.png" alt=" "></img>
+			<div className={styles.logotext}>
+			<h2>Deva Daily Needs</h2>
+				<p>Powered by Needsmart Fidisys</p>
+
+			</div>
+
+			</div>					
+			<ul className={styles.menu}>
+						<li><img src="Vector (6).png"  alt=" "></img>Search</li>
+						<li><img src="Vector (10).png"  alt=" "></img>Orders</li>
+						<li><img src="Vector (7).png"  alt=" "></img>Accounts</li>
+						<li><img src="Vector (9).png"  alt=" "></img>Cart</li>
+						<li><Link to="/login">Login</Link></li>
+				</ul>
+
+</div>
+
+		);
+
         return (					
 					<div className={styles.productcontainer}>
-						<div className={styles.navbar}>
+						{/* <div className={styles.navbar}>
 							<div className={styles.logo}>
 							<img  src="Group 1.png" alt=" "></img>
 							<div className={styles.logotext}>
@@ -98,7 +124,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 										<li><Link to="/login">Login</Link></li>
 								</ul>
 
-    </div>
+    </div> */}
+		<Section />
 		<img className={styles.offer} src="offers banner.png" alt=" "/>
 							<div className={styles.row}>
 
@@ -108,11 +135,12 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 										<div className={styles.items} id={l.id}>
 										<img src={l.image}  alt=" "/>
 										
-											<p className={styles.name}><Link to='login'>{l.category}</Link></p>
+											<p className={styles.name}><Link to='Productlist'>{l.category}</Link></p>
 										</div>		
 								</div>
 								)}								
-							</div>	 											
+							</div>	
+											
 					</div>
 
         );

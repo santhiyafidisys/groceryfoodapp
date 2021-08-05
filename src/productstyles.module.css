@@ -65,7 +65,7 @@ input[type=email], input[type=password] {
     
     
   }
-  button {
+  .Login button {
     background-color: rgb(113, 206, 243);
     color: white;
     padding: 14px 20px;
@@ -198,7 +198,7 @@ padding: 10px;
 }
 /* //productlist// */
 .list{
-  position: fixed;
+  
   width: 15vw;
 	height: 100%;
 	border: 0.5px solid #DDDDDD;
@@ -206,10 +206,61 @@ padding: 10px;
 .list li:hover {
   background-color: #EEEEEE;
   color: #46B588;
-	;
+	
 }
 .list li {
 	padding: 25px;
   text-align: right;
+}
+.cardbox{
+    
+    padding: 0 10px;
+    margin-top: 2%;
+
+}
+.card{
+    display: flex;
+}
+.cardlist{
+    display: flex;
+    width: 110%;
+    margin: 28px;
+}
+.cardlist img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.description h5{
+font-style: normal;
+font-size: 16px;
+line-height: 24px;
+color: #333333;
+}
+.description p{
+    font-size: 12px;
+align-items: center;
+color: #666666;
+
+}
+.cardlist button{
+    align-items: center;
+    padding: 8px 8px;
+    background: #46B588;
+    border-radius: 4px;
+    border: none;
+    width: 88px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.description{
+   
+    
+    margin: 7px;
+    padding: 3px;
+    line-height: 25px;
 }
 

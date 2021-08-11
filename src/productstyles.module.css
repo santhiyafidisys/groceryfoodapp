@@ -1,266 +1,222 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 .container{
-    padding: 40px;
-    
-    margin: auto;
-    
-
+	padding: 40px;
+	margin: auto;
 }
 .Login{
-    
-    padding: 22px;
-    margin: auto;
-    width: 75%;
-    border-radius: 30px;
-    background-color: rgb(233, 227, 233);
+	padding: 22px;
+	margin: auto;
+	width: 75%;
+	border-radius: 30px;
+	background-color: rgb(233, 227, 233);
 }
 .imgcontainer{
-   
-    text-align: center;
-    position: relative;   
+	text-align: center;
+	position: relative;   
 }
 .avatar{
-    text-align: center;
-    position: relative;   
-    margin-bottom: 20px;
-    width: 40%;
-    border-radius: 10%;
- 
-
+	text-align: center;
+	position: relative;   
+	margin-bottom: 20px;
+	width: 40%;
+	border-radius: 10%;
 }
 h1{
-    margin: 20px;
-    color: tomato;
-    text-align: center;
-    font-size: 30px;
-    font-style: oblique;
-    padding: 5px;
-    
+  margin: 20px;
+  color: tomato;
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  padding: 5px;   
 }
 .forms
-{   width: 352px;
-    margin: auto;
-    box-shadow: 0px -2px 8px 9px rgb(0 0 0 / 38%);
-    border-radius: 4px;
-    border: 1px solid black;
-    padding: 20px;
-    background-color: white;
+{  width: 352px;
+  margin: auto;
+  box-shadow: 0px -2px 8px 9px rgb(0 0 0 / 38%);
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: white;
 }
 input[type=email], input[type=password] {
-    width: 90%;
-    padding: 6px 20px;
-    margin: 15px 0;
-    display: inline-block;
-    color: black;
-    background-color: whitesmoke;
-    border-color: rgb(14, 13, 13);
-    border: 1px solid;
-    border-radius: 5px;
-
-    
-    
-  }
-  .Login button {
-    background-color: rgb(113, 206, 243);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  .items{
-    background: #FFFFFF;
-    box-shadow: 0px 0px 5.00275px rgba(0, 0, 0, 0.25);
-    border-radius: 10.0055px;
-padding: 10px;
-width: 137.58px;
-height: 150.08px;
-  }
-  .items img{
-      width: 100px;
-      height: 100px;
-      border-radius: 10px;
-  }
-  .name{
-    font-size: 17.5096px;
-    font-style: normal;
-    margin: 5px 0;
-  }
-.productcontainer{
-    display: block;
-    padding: 40px 0;    
-    background-color:white;
-    text-align: center;
-   
+  width: 90%;
+  padding: 6px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  color: black;
+  background-color: whitesmoke;
+  border-color: rgb(14, 13, 13);
+  border: 1px solid;
+  border-radius: 5px;  
 }
-
+.Login button {
+  background-color: rgb(113, 206, 243);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.items{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5.00275px rgba(0, 0, 0, 0.25);
+  border-radius: 10.0055px;
+	padding: 10px;
+	width: 137.58px;
+	height: 150.08px;
+}
+.items img{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.name{
+  font-size: 17.5096px;
+  font-style: normal;
+  margin: 5px 0;
+}
+.productcontainer{
+  display: block;
+  padding: 40px 0;    
+  background-color:white;
+  text-align: center;  
+}
 .row
 {
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
 }
 .col{
-    
-    flex: 20%;
-    max-width: 20%;
-    box-sizing: border-box;
-    padding: 15px;
+  flex: 20%;
+  max-width: 20%;
+  box-sizing: border-box;
+  padding: 15px;
 }
 @media screen and (max-width: 700px) {
-    .col
+  .col
     {
-        flex: 100%;
-        max-width: 32%;
+      flex: 100%;
+      max-width: 32%;
     }
-    
-}
+    }
 .logo{
-display: inline-flex;
-margin-left: 20px;
-	
-
+	display: inline-flex;
+	margin-left: 20px;
 }
 .logo img{
 	padding: 0;
 	margin: 0;
 }
-
-.logotext {
-    
-    margin: 5px;
-    text-align: left;
+.logotext {  
+  margin: 5px;
+  text-align: left;
 }
 .logotext h2{
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
 }
 .logotext p{
-    font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 18px;
-
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
 }
-
-
 .navbar{
 	padding: 15px;
 	text-align: left;
-
-border-bottom:  white solid 1px;   
-box-shadow:  0px 2px rgb(243, 237, 237) ;
-height: 60px;
- 
+	border-bottom:  white solid 1px;   
+	box-shadow:  0px 2px rgb(243, 237, 237) ;
+	height: 60px;
 }
 .navbar ul{
-
 	float: right;
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
-
 }
 .menu a{
 	list-style-type: none;
-
 }
-
 .navbar ul li{
-
 	margin-left: -3px;
 	align-items: center;
 	padding: 10px;
 	text-decoration: none;
 }
 .menu li{
- 
-	display: flex;
+display: flex;
 padding: 10px;
-
 }
 .menu img{
-	padding: 10px;
-		
+	padding: 10px;		
 }
 .offer{
-    padding: 20px;
+  padding: 20px;
 }
-/* //productlist// */
-.list{
-  
+.list{ 
   width: 15vw;
 	height: 100%;
 	border: 0.5px solid #DDDDDD;
 }
 .list li:hover {
   background-color: #EEEEEE;
-  color: #46B588;
-	
+  color: #46B588;	
 }
 .list li {
 	padding: 25px;
   text-align: right;
 }
-.cardbox{
-    
-    padding: 0 10px;
-    margin-top: 2%;
-
+.cardbox{ 
+  padding: 0 10px;
+  margin-top: 2%;
 }
 .card{
-    display: flex;
+  display: flex;
 }
 .cardlist{
-    display: flex;
-    width: 110%;
-    margin: 28px;
+  display: flex;
+  width: 110%;
+  margin: 28px;
 }
 .cardlist img{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
 .description h5{
-font-style: normal;
-font-size: 16px;
-line-height: 24px;
-color: #333333;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
 }
 .description p{
-    font-size: 12px;
-align-items: center;
-color: #666666;
-
+	font-size: 12px;
+	align-items: center;
+	color: #666666;
 }
 .cardlist button{
-    align-items: center;
-    padding: 8px 8px;
-    background: #46B588;
-    border-radius: 4px;
-    border: none;
-    width: 88px;
-    height: 40px;
-    color: #FFFFFF;
-    font-size: 14px;
-    margin: 10px;
+  align-items: center;
+  padding: 8px 8px;
+  background: #46B588;
+  border-radius: 4px;
+  border: none;
+  width: 88px;
+  height: 40px;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin: 10px;
 }
-
 .description{
-   
-    
-    margin: 7px;
-    padding: 3px;
-    line-height: 25px;
+  margin: 7px;
+  padding: 3px;
+  line-height: 25px;
 }
 

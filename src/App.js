@@ -6,15 +6,15 @@ import {
 } from "react-router-dom";
 import Login from './Loginpage';
 import Productpage from './Productpage';
-import Productlist from './Productlist';
+import Producttype from './Producttype';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 function App() {
   return (
   <Router>
    <Switch>
-     <Route exact path="/Login" component={Login} />
+     <Route exact path="/" component={Login} />
      <Route  path="/productpage" component={Productpage} />
-     <Route path="/productlist" component={Productlist} />
+     <Route path="/" component={Producttype} />
     </Switch>
   </Router>
   );

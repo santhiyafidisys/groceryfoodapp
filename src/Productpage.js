@@ -7,13 +7,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Productlist from './Productlist';
+import Producttype from './Producttype';
 const Productpage = () => {		
 	const productlist = [
 		{ 
 			"id": 1,
 			"image":"FoodGrains.png",
-			"category": "Food Grains",
+			"category": "FoodGrains",
 		},
 		{ 
 			"id": 2,
@@ -58,7 +58,7 @@ const Productpage = () => {
 		{ 
 			"id": 10,
 			"image":"Diary.png",
-			"category": "Frequently Bought",
+			"category": "FrequentlyBought",
 		},
 		];
 		// 	const setData = () => {
@@ -81,10 +81,10 @@ const Productpage = () => {
 					</div>
 			</div>					
 			<ul className={styles.menu}>
-				<li><img src="Vector (6).png"  alt=" "></img>Search</li>
-				<li><img src="Vector (10).png"  alt=" "></img>Orders</li>
-				<li><img src="Vector (7).png"  alt=" "></img>Accounts</li>
-				<li><img src="Vector (9).png"  alt=" "></img>Cart</li>
+				<li><img src="Vector (6).png" alt=" "></img>Search</li>
+				<li><img src="Vector (10).png" alt=" "></img>Orders</li>
+				<li><img src="Vector (7).png" alt=" "></img>Accounts</li>
+				<li><img src="Vector (9).png" alt=" "></img>Cart</li>
 				<li><Link to="/login">Login</Link></li>
 			</ul>
 		</div>
@@ -115,8 +115,8 @@ const Productpage = () => {
 				{productlist.map(list =>
 				<div className={styles.col}>
 					<div className={styles.items} id={list.id}>
-						<img src={list.image}  alt=" "/>										
-						<p className={styles.name}><Link to={`productlist/${list.id}`}>{list.category}</Link></p>
+						<img src={list.image} alt=" "/>										
+						<p className={styles.name}><Link to={`producttype/${list.id}/${list.category}`}>{list.category}</Link></p>
 					</div>		
 				</div>
 				)}								

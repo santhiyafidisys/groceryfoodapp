@@ -19,7 +19,7 @@ const Section = () =>(
 			</div>
 		</div>					
 		<ul className={styles.menu}>
-			<li><img src="Vector (6).png"  alt=" "></img>Search</li>
+			<li><img src="Vector (6).png" alt=" "></img>Search</li>
 			<li><img src="Vector (10).png"  alt=" "></img>Orders</li>
 			<li><img src="Vector (7).png"  alt=" "></img>Accounts</li>
 			<li><img src="Vector (9).png"  alt=" "></img>Cart</li>
@@ -27,7 +27,7 @@ const Section = () =>(
 		</ul>
 	</div>
 );
-const Productlist = () => {		
+const Producttype = () => {		
 	const itemcardlist = [
 		{ 
 			"imageid": 1,
@@ -70,29 +70,45 @@ const Productlist = () => {
 			"button":"ADD",
 		},	
 	];
-	let { id } = useParams();
+	
+	const Type = [
+		{ id: 1, category: "foodgrains"},
+		{ id: 2, category: "Oil&Ghee"},
+		{ id: 3, category: "Spices"},
+		{ id: 4, category: "Vegetables"},
+		{ id: 5, category: "Fruits"},
+		{ id: 6, category: "Diary"},
+		{ id: 7, category: "Beverages"},
+		{ id: 8, category: "Beauty"},
+		{ id: 9, category: "Households"},
+		{ id: 10, category: "Watercan"},
+		{ id: 11, category: "Frequentybought"},
+	];
 	return (
 		<div className={styles.Productlist}>
 			<Section />
 			<div className={styles.card}>
 				<nav>
-					<ol>
-						<li key={id}><Link to={`${id}`}></Link></li>
-					</ol>
-					<ol className={styles.list}>
-						<li>All</li>
-						<li key={id}><Link to={`/1`}>Food Grains</Link></li>
-						<li key={id}><Link to={`${id}`}>Oil & Ghee</Link></li>
-						<li key={id}><Link to={`${id}`}>Spices</Link></li>
-						<li key={id}><Link to={`${id}`}>Vegetables</Link></li>
-						<li key={id}><Link to={`${id}`}>FRUITS</Link></li>
-						<li key={id}><Link to={`${id}`}>diary</Link></li>
-						<li key={id}><Link to={`${id}`}>beverages</Link></li>
-						<li key={id}><Link to={`${id}`}>beauty</Link></li>
-						<li key={id}><Link to={`${id}`}>households</Link></li>
-						<li key={id}><Link to={`${id}`}>watercan</Link>s</li>
-						<li key={id}><Link to={`${id}`}>frequenty bought</Link></li>   
-					</ol>						
+					<ol className={styles.list}>	
+						<li>All</li>				
+						{Type.map(x => (
+						<>							
+							<li><Link to={`/producttype/${x.id}/${x.category}`}>{x.category}</Link></li>
+							{
+							/* <li><Link to={`${x.id}/${x.category}`}>Oil & Ghee</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Spices</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Vegetables</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Fruits</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Diary</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Beverages</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Beauty</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Households</Link></li>
+							<li><Link to={`${x.id}/${x.category}`}>Watercan</Link>s</li>
+							<li><Link to={`${x.id}/${x.category}`}>Frequenty bought</Link></li> */
+							}
+						</>						
+        	))} 
+					</ol>  						
 				</nav>
 			<div className={styles.cardbox}>
 				{itemcardlist.map(x =>
@@ -104,7 +120,7 @@ const Productlist = () => {
 							<p>{x.weight}</p>
 							<p>{x.price}<span style={{textDecoration:"line-through"}}>{x.strike}</span></p>
 						</div>	
-						<button  type="submit" className={styles.carbbt}>{x.button}</button>	
+						<button type="submit" className={styles.carbbt}>{x.button}</button>	
 					</div>
 					)}	
 			</div>
@@ -112,4 +128,4 @@ const Productlist = () => {
 		</div>	
 );
 }
-export default  Productlist;
+export default  Producttype;

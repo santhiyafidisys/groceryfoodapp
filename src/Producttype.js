@@ -89,7 +89,7 @@ const Producttype = () => {
 			<Section />
 			<div className={styles.card}>
 				<nav>
-					<ol className={styles.list}>	
+					<ol className={styles.list}>
 						<li>All</li>				
 						{Type.map(x => (
 						<>							
